@@ -3,11 +3,14 @@
             background-color: #e2e1e0;
         }
 
-    
+        .container {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
         
         .name {
             font-size: 500%;
-            margin-top: 45%;
             color: whitesmoke;
             font-family: rick;
             color: aqua;
@@ -15,7 +18,7 @@
         }
         
         .mainSection {
-            background-image: url('./images/GH2Ukc.jpg');
+            background-image: url('./images/fullscreen.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             height: 100vh;
@@ -47,6 +50,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             text-align: center;
             margin: 0px;
+            color: #0A0A0A;
         }
         
         .heading {
@@ -61,6 +65,7 @@
         .linkIcon {
             text-align: center;
             margin: 1px;
+            font-size: medium;
         }
         
         .tags>p {
@@ -80,7 +85,7 @@
             font-size: 140%;
             font-weight: 500; 
             margin-bottom: 5px;
-            color: rgb(87, 83, 83);
+            color: #0A0A0A;
 
         }
 
@@ -134,7 +139,9 @@
         @media only screen and ( max-width:768px) {
             .mainSection {
                 background-color: black;
-                background-image: none;
+                background-image: url("./images/mobile.jpg");
+                object-fit: initial;
+                background-size: contain;
             }
 
             .subSection {
@@ -146,6 +153,27 @@
                 padding-right: 0px;
                 padding-left: 0px;
                 text-align: center;
+            }
+
+            .subtitle {
+              font-size: xx-large;
+            }
+
+            .container {
+              bottom: 0;
+              margin-top: 200px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            }
+
+            .name {
+              font-size: xx-large;
+            }
+
+            .texts {
+              font-size: x-large;
             }
     
 
